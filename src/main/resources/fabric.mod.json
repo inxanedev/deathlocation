@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "deathlocation",
+	"version": "${version}",
+	"name": "DeathLocation",
+	"description": "Fabric mod which tells you your death location in the chat.",
+	"authors": [
+		"inxanedev"
+	],
+	"contact": {
+		"sources": "https://github.com/inxanedev/deathlocation"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/deathlocation/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.inxane.DeathLocationMod"
+		]
+	},
+	"mixins": [
+		"deathlocation.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.19",
+		"minecraft": "~1.19.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
